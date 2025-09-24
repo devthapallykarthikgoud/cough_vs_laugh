@@ -18,12 +18,12 @@ st.dataframe(df)
 
 st.subheader("Adjust Feature Values")
 st.write("Demo only: if any attribute value 50% then chances increase for cough.")
-freq = st.slider("Frequency (Hz)", 100, 1000, 400)
-intensity = st.slider("Intensity (dB)", 30, 100, 65)
-heart_rate = st.slider("Heart Rate (BPM)", 50, 140, 80)
-bp = st.slider("Blood Pressure (mmHg, systolic)", 90, 180, 120)
-oxygen = st.slider("Oxygen Saturation (%)", 85, 100, 97)
-env_noise = st.slider("Environment Noise (dB)", 20, 100, 50)
+freq = st.slider("Frequency ", 100, 1000, 400)
+intensity = st.slider("Intensity ", 30, 100, 65)
+heart_rate = st.slider("Heart Rate ", 50, 140, 80)
+bp = st.slider("Blood Pressure", 90, 180, 120)
+oxygen = st.slider("Oxygen Saturation ", 85, 100, 97)
+env_noise = st.slider("Environment Noise", 20, 100, 50)
 
 cough_score = 0
 laugh_score = 0
@@ -50,3 +50,4 @@ else:
 
 st.write(f"Cough Likelihood: {cough_prob:.2f}")
 st.write(f"Laugh Likelihood: {laugh_prob:.2f}")
+
